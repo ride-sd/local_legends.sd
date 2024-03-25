@@ -1,0 +1,16 @@
+{
+  "name": "local_legends.sd",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "generate": "pkl eval ./src/definitions/san_diego.pkl --format=json --output-path=./src/data/%{moduleName}.%{outputFormat}"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.3",
+    "vite": "^5.2.0"
+  }
+}

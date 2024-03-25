@@ -1,0 +1,17 @@
+module Quiz
+
+class Category {
+  slug: String
+  name: String
+  displayName : String
+  options: Listing<Option>
+}
+
+class Option {
+  name: String
+  difficulty: Int(isBetween(1, 5))
+}
+
+title: String
+numOfAnswers = Int
+categories: Listing<Category>
