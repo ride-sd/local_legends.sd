@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "generate": "pkl eval ./src/definitions/san_diego.pkl --format=json --output-path=./src/data/%{moduleName}.%{outputFormat}"
+    "generate": "pkl eval ./src/quizData/san_diego.pkl --format=json --output-path=./src/data/%{moduleName}.%{outputFormat}"
   },
   "devDependencies": {
     "typescript": "^5.4.3",
