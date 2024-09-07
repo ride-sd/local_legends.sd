@@ -169,7 +169,6 @@ local neighborhoods : Category = new {
         new Option { name = "Point Loma" difficulty = 1 }
         new Option { name = "Rancho Bernardo" difficulty = 1 }
         new Option { name = "Rancho Peñasquitos" difficulty = 1 }
-        new Option { name = "Rancho San Diego" difficulty = 1 }
         new Option { name = "Sabre Springs" difficulty = 1 }
         new Option { name = "San Carlos" difficulty = 1 }
         new Option { name = "San Ysidro" difficulty = 1 }
