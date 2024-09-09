@@ -13,5 +13,4 @@ class Option {
 }
 
 title: String
-numOfAnswers = Int
 categories: Listing<Category>
