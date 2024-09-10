@@ -15,9 +15,7 @@ export type Question = {
 };
 
 export type Game = {
-  currentQuestion: Question;
-  remainingQuestions: Question[];
+  questions: Question[];
   questionIndex: number;
-  totalQuestions: number;
   correctlyAnswered: number;
 }

@@ -1,4 +1,4 @@
-amends "quiz.pkl"
+amends "../schema/quiz.pkl"
 
 local cities : Category = new {
     slug = "city"
@@ -255,7 +255,6 @@ local madeUp : Category = new {
   }
 
 title = "Local Legends San Diego Edition"
-numOfAnswers = 4
 categories = new Listing {
   cities
   unicorporatedCommunities

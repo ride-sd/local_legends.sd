@@ -1,7 +1,6 @@
 import './style.css'
-import { displayStartScreen } from './game.ts'
-import { loadQuiz, generateQuestions, initializeQuizState } from './state.ts'
-
+import { displayStartScreen, renderGame, displayCurrentQuestion } from './game.ts'
+import { loadQuiz, generateQuestions, initializeQuizState, } from './state.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="start-screen">
@@ -28,22 +27,36 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-let startScreen = document.querySelector<HTMLDivElement>(".start-screen")!;
-let displayContainer = document.getElementById("display-container")!;
+const numOfQuestions = 10;
 
-const gameData = await loadQuiz("san_diego");
-const questions = generateQuestions(gameData, 10);
-const gameState = initializeQuizState(questions);
+const startScreen = document.querySelector<HTMLDivElement>(".start-screen")!
+const displayContainer = document.getElementById("display-container")!
 
-displayStartScreen(startScreen, displayContainer);
+const scoreContainer = document.querySelector(".score-container")
+const restart = document.getElementById("restart")!
+const startButton = document.getElementById("start-button")!
+
+const gameData = loadQuiz();
+
+let gameState = initializeQuizState(generateQuestions(gameData, numOfQuestions))
+
+displayStartScreen(startScreen, displayContainer)
+renderGame(displayContainer, gameState)
 
 
+startButton.addEventListener("click", () => {
+  startScreen.classList.add("hide")
 
-let timeLeft = document.querySelector(".time-left");
-let quizContainer = document.getElementById("container");
-let nextBtn = document.getElementById("next-button");
-let countOfQuestion = document.querySelector(".number-of-question");
-let scoreContainer = document.querySelector(".score-container");
-let restart = document.getElementById("restart");
-let userScore = document.getElementById("user-score");
-let startButton = document.getElementById("start-button");
+  displayContainer.classList.remove("hide")
+  displayCurrentQuestion(gameState)
+})
+
+restart.addEventListener("click", () => {
+  scoreContainer?.classList.add("hide")
+  gameState = initializeQuizState(generateQuestions(gameData, 10))
+
+  renderGame(displayContainer, gameState)
+
+  displayContainer.classList.remove("hide")
+  displayCurrentQuestion(gameState)
+})

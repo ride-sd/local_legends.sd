@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 src/types/generated
+src/data/*.json
 *.local
 
 # Editor directories and files

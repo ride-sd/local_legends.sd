@@ -1,5 +1,6 @@
 import { Game, Question, PossibleCategory } from './types/game';
-import { Quiz, Category, loadFromPath } from './types/generated/quiz.pkl'
+import { Quiz, Category } from './types/generated/quiz.pkl'
+import quizData from './data/quiz_data.json'
 
 function shuffleArray<T>(array: T[]): T[] {
   for (let i = array.length - 1; i > 0; i--) {
@@ -9,8 +10,8 @@ function shuffleArray<T>(array: T[]): T[] {
   return array;
 }
 
-export function loadQuiz(name : string) : Promise<Quiz> {
-  return loadFromPath(`./data/${name}.pkl`)
+export function loadQuiz() : Quiz {
+  return quizData as Quiz
 }
 
 export function generateQuestions(quizData : Quiz, length: number) : Question[] {
@@ -40,13 +41,9 @@ export function generateQuestions(quizData : Quiz, length: number) : Question[] 
 }
 
 export function initializeQuizState(questions: Question[]) : Game {
-  const [currentQuestion, ...remainingQuestions] = questions;
-
   return {
-    currentQuestion: currentQuestion,
-    remainingQuestions: remainingQuestions,
+    questions: questions,
     questionIndex: 0,
-    totalQuestions: questions.length,
     correctlyAnswered: 0,
   }
 }
