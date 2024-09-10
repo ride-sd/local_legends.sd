@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && yarn generate && vite build",
     "preview": "vite preview",
     "generate": "pkl eval ./src/data/san_diego.pkl --format=json --output-path=./src/data/quiz_data.%{outputFormat}",
     "generateTypes": "pkl-gen-typescript src/quizData/quiz.pkl -o src/types/generated",
