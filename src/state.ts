@@ -1,6 +1,6 @@
-import { Game, Question, PossibleCategory } from './types/game';
-import { Quiz, Category } from './types/generated/quiz.pkl'
-import quizData from './data/quiz_data.json'
+import { Game, Question, PossibleAnswer } from './types/game';
+import { Quiz, Category } from './types/quiz'
+import quizData from './data/san_diego.json'
 
 function shuffleArray<T>(array: T[]): T[] {
   for (let i = array.length - 1; i > 0; i--) {
@@ -15,7 +15,7 @@ export function loadQuiz() : Quiz {
 }
 
 export function generateQuestions(quizData : Quiz, length: number) : Question[] {
-  const possibleCategories : PossibleCategory[] = quizData.categories.flatMap((category: Category) => {
+  const possibleCategories : PossibleAnswer[] = quizData.categories.flatMap((category: Category) => {
     return {
       id: category.slug,
       displayName: category.displayName

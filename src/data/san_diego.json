@@ -1,0 +1,921 @@
+{
+  "title": "Local Legends San Diego Edition",
+  "categories": [
+    {
+      "slug": "city",
+      "name": "City in San Diego County",
+      "displayName": "City",
+      "options": [
+        {
+          "name": "Carlsbad",
+          "difficulty": 1
+        },
+        {
+          "name": "Chula Vista",
+          "difficulty": 1
+        },
+        {
+          "name": "Coronado",
+          "difficulty": 1
+        },
+        {
+          "name": "Del Mar",
+          "difficulty": 1
+        },
+        {
+          "name": "El Cajon",
+          "difficulty": 1
+        },
+        {
+          "name": "Encinitas",
+          "difficulty": 1
+        },
+        {
+          "name": "Escondido",
+          "difficulty": 1
+        },
+        {
+          "name": "Imperial Beach",
+          "difficulty": 1
+        },
+        {
+          "name": "La Mesa",
+          "difficulty": 1
+        },
+        {
+          "name": "Lemon Grove",
+          "difficulty": 1
+        },
+        {
+          "name": "National City",
+          "difficulty": 1
+        },
+        {
+          "name": "Oceanside",
+          "difficulty": 1
+        },
+        {
+          "name": "Poway",
+          "difficulty": 1
+        },
+        {
+          "name": "San Diego",
+          "difficulty": 1
+        },
+        {
+          "name": "San Marcos",
+          "difficulty": 1
+        },
+        {
+          "name": "Santee",
+          "difficulty": 1
+        },
+        {
+          "name": "Solana Beach",
+          "difficulty": 1
+        },
+        {
+          "name": "Vista",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "slug": "unincorporated-community",
+      "name": "Unincorporated Community in San Diego County",
+      "displayName": "Unincorporated Community",
+      "options": [
+        {
+          "name": "Agua Caliente",
+          "difficulty": 1
+        },
+        {
+          "name": "Alpine",
+          "difficulty": 1
+        },
+        {
+          "name": "Bankhead Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Banner",
+          "difficulty": 1
+        },
+        {
+          "name": "Barrett Junction",
+          "difficulty": 1
+        },
+        {
+          "name": "Bear Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Blossom Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Bonita",
+          "difficulty": 1
+        },
+        {
+          "name": "Bonsall",
+          "difficulty": 1
+        },
+        {
+          "name": "Borrego Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Bostonia",
+          "difficulty": 1
+        },
+        {
+          "name": "Boulder Oaks",
+          "difficulty": 1
+        },
+        {
+          "name": "Boulevard",
+          "difficulty": 1
+        },
+        {
+          "name": "Buckman Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Cameron Corners",
+          "difficulty": 1
+        },
+        {
+          "name": "Campo",
+          "difficulty": 1
+        },
+        {
+          "name": "Canyon City",
+          "difficulty": 1
+        },
+        {
+          "name": "Casa De Oro",
+          "difficulty": 1
+        },
+        {
+          "name": "Cottonwood",
+          "difficulty": 1
+        },
+        {
+          "name": "Crest",
+          "difficulty": 1
+        },
+        {
+          "name": "Cuyamaca",
+          "difficulty": 1
+        },
+        {
+          "name": "De Luz",
+          "difficulty": 1
+        },
+        {
+          "name": "Dehesa",
+          "difficulty": 1
+        },
+        {
+          "name": "Del Dios",
+          "difficulty": 1
+        },
+        {
+          "name": "Descanso",
+          "difficulty": 1
+        },
+        {
+          "name": "Desert Lodge",
+          "difficulty": 1
+        },
+        {
+          "name": "Dulzura",
+          "difficulty": 1
+        },
+        {
+          "name": "Eagles Nest",
+          "difficulty": 1
+        },
+        {
+          "name": "Echo Dell",
+          "difficulty": 1
+        },
+        {
+          "name": "Eden Gardens",
+          "difficulty": 1
+        },
+        {
+          "name": "Engineer Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Eucalyptus Hills",
+          "difficulty": 1
+        },
+        {
+          "name": "Fairbanks Ranch",
+          "difficulty": 1
+        },
+        {
+          "name": "Fallbrook",
+          "difficulty": 1
+        },
+        {
+          "name": "Flinn Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Foster",
+          "difficulty": 1
+        },
+        {
+          "name": "Glen Oaks",
+          "difficulty": 1
+        },
+        {
+          "name": "Green Valley Falls",
+          "difficulty": 1
+        },
+        {
+          "name": "Guatay",
+          "difficulty": 1
+        },
+        {
+          "name": "Harbinson Canyon",
+          "difficulty": 1
+        },
+        {
+          "name": "Harmony Grove",
+          "difficulty": 1
+        },
+        {
+          "name": "Hidden Glen",
+          "difficulty": 1
+        },
+        {
+          "name": "Hidden Meadows",
+          "difficulty": 1
+        },
+        {
+          "name": "Indian Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Jacumba",
+          "difficulty": 1
+        },
+        {
+          "name": "Jamul",
+          "difficulty": 1
+        },
+        {
+          "name": "Julian",
+          "difficulty": 1
+        },
+        {
+          "name": "La Presa",
+          "difficulty": 1
+        },
+        {
+          "name": "Lake Henshaw",
+          "difficulty": 1
+        },
+        {
+          "name": "Lakeside",
+          "difficulty": 1
+        },
+        {
+          "name": "Lincoln Acres",
+          "difficulty": 1
+        },
+        {
+          "name": "Live Oak Park",
+          "difficulty": 1
+        },
+        {
+          "name": "Live Oak Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Manzanita",
+          "difficulty": 1
+        },
+        {
+          "name": "Morena Village",
+          "difficulty": 1
+        },
+        {
+          "name": "Oak Grove",
+          "difficulty": 1
+        },
+        {
+          "name": "Ocotillo Wells",
+          "difficulty": 1
+        },
+        {
+          "name": "Pala",
+          "difficulty": 1
+        },
+        {
+          "name": "Pala Mesa",
+          "difficulty": 1
+        },
+        {
+          "name": "Palomar Mountain",
+          "difficulty": 1
+        },
+        {
+          "name": "Paso Picacho",
+          "difficulty": 1
+        },
+        {
+          "name": "Pauma Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Pine Hills",
+          "difficulty": 1
+        },
+        {
+          "name": "Pine Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Potrero",
+          "difficulty": 1
+        },
+        {
+          "name": "Puerta La Cruz",
+          "difficulty": 1
+        },
+        {
+          "name": "Rainbow",
+          "difficulty": 1
+        },
+        {
+          "name": "Ramona",
+          "difficulty": 1
+        },
+        {
+          "name": "Rancho Palo Verde",
+          "difficulty": 1
+        },
+        {
+          "name": "Rancho San Diego",
+          "difficulty": 1
+        },
+        {
+          "name": "Rancho Santa Fe",
+          "difficulty": 1
+        },
+        {
+          "name": "Rock Haven",
+          "difficulty": 1
+        },
+        {
+          "name": "Rosemont",
+          "difficulty": 1
+        },
+        {
+          "name": "San Felipe",
+          "difficulty": 1
+        },
+        {
+          "name": "San Ignacio",
+          "difficulty": 1
+        },
+        {
+          "name": "San Luis Rey Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Santa Ysabel",
+          "difficulty": 1
+        },
+        {
+          "name": "Shady Dell",
+          "difficulty": 1
+        },
+        {
+          "name": "Shelter Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Spring Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Sunnyside",
+          "difficulty": 1
+        },
+        {
+          "name": "Sunshine Summit",
+          "difficulty": 1
+        },
+        {
+          "name": "Tecate",
+          "difficulty": 1
+        },
+        {
+          "name": "The Narrows",
+          "difficulty": 1
+        },
+        {
+          "name": "The Willows",
+          "difficulty": 1
+        },
+        {
+          "name": "Tierra Del Sol",
+          "difficulty": 1
+        },
+        {
+          "name": "Twin Oaks",
+          "difficulty": 1
+        },
+        {
+          "name": "Vallecito",
+          "difficulty": 1
+        },
+        {
+          "name": "Valley Center",
+          "difficulty": 1
+        },
+        {
+          "name": "Victoria",
+          "difficulty": 1
+        },
+        {
+          "name": "Warner Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Whispering Pines",
+          "difficulty": 1
+        },
+        {
+          "name": "Witch Creek",
+          "difficulty": 1
+        },
+        {
+          "name": "Wynola",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "slug": "neighborhood",
+      "name": "Neighborhood of the city of San Diego",
+      "displayName": "Neighborhood",
+      "options": [
+        {
+          "name": "Bankers Hill",
+          "difficulty": 1
+        },
+        {
+          "name": "Bay Park",
+          "difficulty": 1
+        },
+        {
+          "name": "Birdland",
+          "difficulty": 1
+        },
+        {
+          "name": "Carmel Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "City Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Clairemont",
+          "difficulty": 1
+        },
+        {
+          "name": "College Area",
+          "difficulty": 1
+        },
+        {
+          "name": "Del Mar Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Downtown San Diego",
+          "difficulty": 1
+        },
+        {
+          "name": "East Village",
+          "difficulty": 1
+        },
+        {
+          "name": "Encanto",
+          "difficulty": 1
+        },
+        {
+          "name": "Gaslamp Quarter",
+          "difficulty": 1
+        },
+        {
+          "name": "Golden Hill",
+          "difficulty": 1
+        },
+        {
+          "name": "Hillcrest",
+          "difficulty": 1
+        },
+        {
+          "name": "Kearny Mesa",
+          "difficulty": 1
+        },
+        {
+          "name": "La Jolla",
+          "difficulty": 1
+        },
+        {
+          "name": "Linda Vista",
+          "difficulty": 1
+        },
+        {
+          "name": "Little Italy",
+          "difficulty": 1
+        },
+        {
+          "name": "Midway District",
+          "difficulty": 1
+        },
+        {
+          "name": "Mira Mesa",
+          "difficulty": 1
+        },
+        {
+          "name": "Miramar",
+          "difficulty": 1
+        },
+        {
+          "name": "Mission Beach",
+          "difficulty": 1
+        },
+        {
+          "name": "Mission Hills",
+          "difficulty": 1
+        },
+        {
+          "name": "Mount Hope",
+          "difficulty": 1
+        },
+        {
+          "name": "Navajo",
+          "difficulty": 1
+        },
+        {
+          "name": "Normal Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "North Park",
+          "difficulty": 1
+        },
+        {
+          "name": "Oak Park",
+          "difficulty": 1
+        },
+        {
+          "name": "Ocean Beach",
+          "difficulty": 1
+        },
+        {
+          "name": "Old Town",
+          "difficulty": 1
+        },
+        {
+          "name": "Otay Mesa",
+          "difficulty": 1
+        },
+        {
+          "name": "Pacific Beach",
+          "difficulty": 1
+        },
+        {
+          "name": "Paradise Hills",
+          "difficulty": 1
+        },
+        {
+          "name": "Point Loma",
+          "difficulty": 1
+        },
+        {
+          "name": "Rancho Bernardo",
+          "difficulty": 1
+        },
+        {
+          "name": "Rancho Peñasquitos",
+          "difficulty": 1
+        },
+        {
+          "name": "Sabre Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "San Carlos",
+          "difficulty": 1
+        },
+        {
+          "name": "San Ysidro",
+          "difficulty": 1
+        },
+        {
+          "name": "Scripps Ranch",
+          "difficulty": 1
+        },
+        {
+          "name": "Serra Mesa",
+          "difficulty": 1
+        },
+        {
+          "name": "Skyline",
+          "difficulty": 1
+        },
+        {
+          "name": "Sorrento Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "South Park",
+          "difficulty": 1
+        },
+        {
+          "name": "Southcrest",
+          "difficulty": 1
+        },
+        {
+          "name": "Talmadge",
+          "difficulty": 1
+        },
+        {
+          "name": "Tierrasanta",
+          "difficulty": 1
+        },
+        {
+          "name": "Torrey Pines",
+          "difficulty": 1
+        },
+        {
+          "name": "University Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Webster",
+          "difficulty": 1
+        }
+      ]
+    },
+    {
+      "slug": "made-up",
+      "name": "Made Up Place",
+      "displayName": "You Made This Up",
+      "options": [
+        {
+          "name": "Willowbrook Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Sunset Bluffs",
+          "difficulty": 1
+        },
+        {
+          "name": "Meadowview Terrace",
+          "difficulty": 1
+        },
+        {
+          "name": "Oakridge Park",
+          "difficulty": 1
+        },
+        {
+          "name": "Pinecrest Grove",
+          "difficulty": 1
+        },
+        {
+          "name": "Maplewood Meadows",
+          "difficulty": 1
+        },
+        {
+          "name": "Riverbend Estates",
+          "difficulty": 1
+        },
+        {
+          "name": "Whispering Pines Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Lakeside Meadows",
+          "difficulty": 1
+        },
+        {
+          "name": "Cedar Ridge Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Golden Valley Terrace",
+          "difficulty": 1
+        },
+        {
+          "name": "Autumn Ridge",
+          "difficulty": 1
+        },
+        {
+          "name": "Silverwood Estates",
+          "difficulty": 1
+        },
+        {
+          "name": "Bluebird Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Serenity Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Springwood Terrace",
+          "difficulty": 1
+        },
+        {
+          "name": "Birchwood Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Meadowbrook Village",
+          "difficulty": 1
+        },
+        {
+          "name": "Summerfield Terrace",
+          "difficulty": 1
+        },
+        {
+          "name": "Evergreen Ridge",
+          "difficulty": 1
+        },
+        {
+          "name": "Sunflower Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Whispering Oaks Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Bluebird Ridge",
+          "difficulty": 1
+        },
+        {
+          "name": "Serenity Hills",
+          "difficulty": 1
+        },
+        {
+          "name": "Rolling Meadows",
+          "difficulty": 1
+        },
+        {
+          "name": "Morning Mist Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Hidden Springs Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Pinecone Creek",
+          "difficulty": 1
+        },
+        {
+          "name": "Wildflower Ridge",
+          "difficulty": 1
+        },
+        {
+          "name": "Harmony Meadows",
+          "difficulty": 1
+        },
+        {
+          "name": "Oakwood Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Willow Creek Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Cedarwood Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Maple Ridge Estates",
+          "difficulty": 1
+        },
+        {
+          "name": "Riverdale Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Meadowland Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Lakeside Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Summit Crest",
+          "difficulty": 1
+        },
+        {
+          "name": "Fairview Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Pinehurst Hollow",
+          "difficulty": 1
+        },
+        {
+          "name": "Clearwater City",
+          "difficulty": 1
+        },
+        {
+          "name": "Harbor Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Lakeshore Vista",
+          "difficulty": 1
+        },
+        {
+          "name": "Summit Ridge City",
+          "difficulty": 1
+        },
+        {
+          "name": "Willowbrook Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Pinecrest City",
+          "difficulty": 1
+        },
+        {
+          "name": "Serenity Bay City",
+          "difficulty": 1
+        },
+        {
+          "name": "Meadowview City",
+          "difficulty": 1
+        },
+        {
+          "name": "Silverwood Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Oakridge Heights",
+          "difficulty": 1
+        },
+        {
+          "name": "Springdale City",
+          "difficulty": 1
+        },
+        {
+          "name": "Maplewood Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Riverbend City",
+          "difficulty": 1
+        },
+        {
+          "name": "Birchwood Vista",
+          "difficulty": 1
+        },
+        {
+          "name": "Lakeside Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Autumn Valley",
+          "difficulty": 1
+        },
+        {
+          "name": "Cedarwood City",
+          "difficulty": 1
+        },
+        {
+          "name": "Hillcrest Springs",
+          "difficulty": 1
+        },
+        {
+          "name": "Greenwood City",
+          "difficulty": 1
+        },
+        {
+          "name": "Evergreen Bay",
+          "difficulty": 1
+        }
+      ]
+    }
+  ]
+}
