@@ -7,7 +7,7 @@ export const homedir = () => {
 
 export default defineConfig({
   plugins: [
-    checker({ typescript: false }),
+    checker({ typescript: true }),
   ],
   define: {
     'process.env': {
