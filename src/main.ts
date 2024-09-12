@@ -4,6 +4,10 @@ import { loadQuiz, generateQuestions, initializeQuizState, } from './state.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="start-screen">
+    <div class="info">
+        <h1>Local Legends San Diego Edition</h1>
+        <p>Can you categorize these localities?</p>
+    </div>
     <button id="start-button">Start</button>
   </div>
   <div id="display-container">
@@ -42,7 +46,6 @@ let gameState = initializeQuizState(generateQuestions(gameData, numOfQuestions))
 
 displayStartScreen(startScreen, displayContainer)
 renderGame(displayContainer, gameState)
-
 
 startButton.addEventListener("click", () => {
   startScreen.classList.add("hide")

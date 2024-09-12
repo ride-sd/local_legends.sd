@@ -19,6 +19,14 @@ body {
   align-items: center;
   justify-content: center;
 }
+.info {
+  background-color: #ffffff;
+  padding: 3.1em 1.8em;
+  width: 60%;
+  margin: 3.1em 1.8em;
+  border-radius: 1em;
+  justify-content: space-between;
+}
 button {
   border: none;
   outline: none;
