@@ -1,5 +1,5 @@
 
-import { Quiz } from './types/generated/quiz.pkl'
+import { Quiz } from './types/quiz'
 import { describe, expect, test } from 'vitest'
 import { generateQuestions } from './state'
 

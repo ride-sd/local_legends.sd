@@ -1,4 +1,4 @@
-export type PossibleCategory = {
+export type PossibleAnswer = {
   id: string;
   displayName: string;
 }
@@ -9,9 +9,9 @@ type Locality = {
 
 export type Question = {
   locality: Locality;
-  options: PossibleCategory[];
-  selected?: PossibleCategory;
-  correct: PossibleCategory;
+  options: PossibleAnswer[];
+  selected?: PossibleAnswer;
+  correct: PossibleAnswer;
 };
 
 export type Game = {
