@@ -5,8 +5,17 @@ import { loadQuiz, generateQuestions, initializeQuizState, } from './state.ts'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div class="start-screen">
     <div class="info">
-        <h1>Local Legends San Diego Edition</h1>
+        <h1>How well Do You Know San Diego?</h1>
         <p>Can you categorize these localities?</p>
+        <p>Choose between:</p>
+        <p>
+          <ul>
+            <li>A City in the County</li>
+            <li>An Unincorporated Community in the County</li>
+            <li>A Neighborhood in San Diego</li>
+            <li>A Made Up Place</li>
+          </ul>
+          </p>
     </div>
     <button id="start-button">Start</button>
   </div>
