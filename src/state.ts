@@ -32,7 +32,8 @@ export function generateQuestions(quizData : Quiz, length: number) : Question[] 
         correct: {
           id: category.slug,
           displayName: category.displayName
-        }
+        },
+        difficulty: option.difficulty
       }
     ))
   )).flat()

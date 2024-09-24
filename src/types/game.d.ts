@@ -12,6 +12,7 @@ export type Question = {
   options: PossibleAnswer[];
   selected?: PossibleAnswer;
   correct: PossibleAnswer;
+  difficulty: number;
 };
 
 export type Game = {

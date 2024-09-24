@@ -1,5 +1,7 @@
 import { Question, Game  } from "./types/game";
 
+declare const fathom: any;
+
 export function displayStartScreen(startScreen: HTMLDivElement, displayContainer: HTMLElement) {
   window.onload = () => {
     startScreen.classList.remove("hide");
@@ -10,8 +12,10 @@ export function displayStartScreen(startScreen: HTMLDivElement, displayContainer
 function verifyAnswer(clickedOption : HTMLButtonElement, allOptions : HTMLButtonElement[], currentQuestion: Question, game: Game) {
   if(clickedOption.dataset.id === currentQuestion.correct.id) {
     game.correctlyAnswered += 1
+    trackAnswer(fathom, currentQuestion, clickedOption, "correct")
   } else {
     clickedOption.classList.add("incorrect")
+    trackAnswer(fathom, currentQuestion, clickedOption, "incorrect")
   }
 
   allOptions.forEach((element) => {
@@ -80,6 +84,12 @@ export function renderGame(container: HTMLElement, game: Game) {
   }
 
   container.appendChild(nextButton)
+}
+
+function trackAnswer(fathom : any, question : Question, selectedOption : HTMLButtonElement, result : "correct" | "incorrect") {
+  if (typeof fathom !== "undefined") {
+    fathom.trackEvent(JSON.stringify({locality: question.locality.name, selection: selectedOption.dataset.id, result: result, difficulty: question.difficulty}))
+  }
 }
 
 function showScore(game : Game) {
