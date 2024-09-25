@@ -89,6 +89,10 @@ export function renderGame(container: HTMLElement, game: Game) {
 function trackAnswer(fathom : any, question : Question, selectedOption : HTMLButtonElement, result : "correct" | "incorrect") {
   if (typeof fathom !== "undefined") {
     fathom.trackEvent(JSON.stringify({locality: question.locality.name, selection: selectedOption.dataset.id, result: result, difficulty: question.difficulty}))
+
+    if(result === "incorrect") {
+      fathom.trackEvent(`incorrect#${question.locality.name}`)
+    }
   }
 }
 
