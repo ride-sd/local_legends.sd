@@ -10,6 +10,20 @@ function shuffleArray<T>(array: T[]): T[] {
   return array;
 }
 
+export function buildDistribution(length : number, divideBy : number) : number[] {
+  const minAmount : number = Math.floor(length / divideBy)
+
+  const distribution : number[] = Array.from({length: divideBy}, () => minAmount)
+
+  const remaining = (length % divideBy)
+
+  for(let i = 0; i < remaining; i++) {
+    distribution[i] += 1
+  }
+
+  return distribution
+}
+
 export function loadQuiz() : Quiz {
   return quizData as Quiz
 }
@@ -22,8 +36,12 @@ export function generateQuestions(quizData : Quiz, length: number) : Question[] 
     }
   })
 
-  const allQuestions : Question[] = quizData.categories.map((category: Category) => (
-    category.options.map((option) => (
+  const distribution : number[] = shuffleArray(buildDistribution(length, possibleCategories.length))
+
+  const questions : Question[] = distribution.map((amount : number, index : number) => {
+    const category = quizData.categories[index]
+
+    return shuffleArray(category.options).slice(0, amount).map((option) => (
       {
         locality: {
           name: option.name,
@@ -36,9 +54,9 @@ export function generateQuestions(quizData : Quiz, length: number) : Question[] 
         difficulty: option.difficulty
       }
     ))
-  )).flat()
+  }).flat()
 
-  return shuffleArray(allQuestions).slice(0, length)
+  return shuffleArray(questions)
 }
 
 export function initializeQuizState(questions: Question[]) : Game {

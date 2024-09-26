@@ -1,7 +1,7 @@
 
 import { Quiz } from './types/quiz'
 import { describe, expect, test } from 'vitest'
-import { generateQuestions } from './state'
+import { generateQuestions, buildDistribution } from './state'
 
 describe('generateQuestions', () => {
   const exampleQuiz : Quiz = {
@@ -71,6 +71,16 @@ describe('generateQuestions', () => {
   }
 
   test('generates a list of questions', () => {
-    expect(generateQuestions(exampleQuiz, 2).length).toBe(2)
+    expect(generateQuestions(exampleQuiz, 5).length).toBe(5)
+  })
+})
+
+describe('buildDistribution', () => {
+  test('builds correct distribution for even division', () => {
+    expect(buildDistribution(10, 5)).toEqual([2, 2, 2, 2, 2])
+  })
+
+  test('builds correct distribution for uneven division', () => {
+    expect(buildDistribution(10, 4)).toEqual([3, 3, 2, 2])
   })
 })
