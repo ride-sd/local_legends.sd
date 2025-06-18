@@ -36,6 +36,18 @@ body {
   border-radius: 1em;
   justify-content: space-between;
 }
+.footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #ffffff;
+  padding: 1em 1em;
+  width: 12%;
+  margin: 2em 1em;
+  border-radius: 1em;
+  justify-content: space-between;
+  text-align: left;
+}
 
 @media (max-width: 768px) {
   .info {
